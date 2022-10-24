@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Kitchen</title>
+
+  </head>
+  <body>
+    <h1>My Kitchen</h1>
+
+    <div id="forms">
+    <button class="btn btn-primary addClick" type="button" data-toggle="collapse" data-target="#addIngredientCollapse" aria-expanded="false" aria-controls="addIngredientCollapse">
+      + Add Ingredient
+    </button>
+
+    <button class="btn btn-primary addClick" type="button" data-toggle="collapse" data-target="#addRecipeCollapse" aria-expanded="false" aria-controls="addRecipeCollapse">
+      + Add Recipe
+    </button>
+
+    <div class="accordion-group">
+    <div class="collapse" id="addIngredientCollapse" data-parent="#forms">
+      <form id="addIngredientForm">
+        <div class="form-group">
+          <label for="formIngName">Ingredient name:</label>
+          <input type="text" class="form-control" id="formIngName">
+        </div>
+        <div class="form-group">
+          <label for="formIngImage">Ingredient image:</label>
+          <input type="text" class="form-control" id="formIngImage">
+        </div>
+        <div class="form-group">
+          <label for="formIngCalories">Ingredient calories:</label>
+          <input type="text" class="form-control" id="formIngCalories">
+        </div>
+        <button class="btn btn-primary">Add</button>
+      </form>
+    </div>
+
+    <div class="collapse" id="addRecipeCollapse" data-parent="#forms">
+      <form id="addRecipeForm">
+        <div class="form-group">
+          <label for="formIngName">Recipe name:</label>
+          <input type="text" class="form-control" id="formRcpName">
+        </div>
+        <div class="form-group">
+          <label for="formIngImage">Recipe cooking method:</label>
+          <input type="text" class="form-control" id="formRcpMethod">
+        </div>
+        <div class="form-group">
+          <label for="formIngCalories">Recipe cooking time:</label>
+          <input type="text" class="form-control" id="formRcpTime">
+        </div>
+        <div class="form-group">
+          <label for="formIngCalories">Recipe Image:</label>
+          <input type="text" class="form-control" id="formRcpImage">
+        </div>
+        <h2>Choose Ingredients</h2>
+        <div id="ingredientsList"></div>
+        <button class="btn btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="recipes"></div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  
+  </body>
+</html>
+

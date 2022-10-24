@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+  }
+
+  h1 {
+    padding: 30px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#9ee0ff, #645f91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 50pt;
+  }
+
+  form {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 3px 5px #cfcfcf;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    text-align: left;
+    margin: 15px auto;
+  }
+
+  .ingredient {
+    display: inline-block;
+    background: #f7f7f7;
+    padding: 10px 20px;
+    margin: 10px 10px 10px 0;
+  }
+
+  .ingredient img {
+    height: 100px;
+    margin: 7px 0;
+  }
+
+  .ingredient h3 {
+    font-size: 15pt;
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 3px;
+  }
+  
+  .row {
+    margin: 0 !important;
+  }
+
+  .card {
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border: 1px solid #a6a6a6;
+  }
+
+  .cardIngrediets {
+    display: none;
+  }
